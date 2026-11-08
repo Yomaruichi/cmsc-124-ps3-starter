@@ -1,8 +1,8 @@
 id	value	kind	length	operator
-P01	TODO	TODO	TODO	TODO
-P02	TODO	TODO	TODO	TODO
-P03	TODO	TODO	TODO	TODO
-P04	TODO	TODO	TODO	TODO
+P01	7	integer	none	function
+P02	(+,1,2)	cons	3	function
+P03	nil	null	0	none
+P04	t	symbol	none	none
 P05	TODO	TODO	TODO	TODO
 P06	TODO	TODO	TODO	TODO
 P07	TODO	TODO	TODO	TODO
@@ -11,7 +11,7 @@ P09	TODO	TODO	TODO	TODO
 P10	TODO	TODO	TODO	TODO
 P11	TODO	TODO	TODO	TODO
 P12	TODO	TODO	TODO	TODO
-P13	TODO	TODO	TODO	TODO
-P14	TODO	TODO	TODO	TODO
-P15	TODO	TODO	TODO	TODO
-P16	TODO	TODO	TODO	TODO
+P13	(2,0,1)	cons	3	function
+P14	(1,4,9)	cons	3	function
+P15	#<function>	function	none	macro
+P16	6	integer	none	special-operator
