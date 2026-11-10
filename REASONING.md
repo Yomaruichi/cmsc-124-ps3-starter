@@ -29,28 +29,28 @@ length is `0` and since it doesn't have a head the operator is `none`.
 length of `none` and since it doesn't have a head the operator is `none`.
 
 ## P05
-Replace this line with the rule behind this case's four fields.
+`(symbolp nil)` heads with the function `symbolp` where it tests whether the `nil` is a symbol or not, which evaluates to `t`, and that is a symbol, its length is `none`, and the head is a `function`.
 
 ## P06
-Replace this line with the rule behind this case's four fields.
+`(car '())` heads with the function `car` where it's the head of an empty list `()` which returns `nil`, which represents the empty list, and that is a `null`, so the length is `0`, and the head is a `function`.
 
 ## P07
-Replace this line with the rule behind this case's four fields.
+`(cons 1 '(2 3))` heads with the function `cons`. It prepends `1` to the unevaluated list which is `(2 3)`, returning the list `(1,2,3)`, and that is a `cons` with length `3` and the head is a `function`.
 
 ## P08
-Replace this line with the rule behind this case's four fields.
+`(if (null '()) 'empty 'full)` heads with the special operator `if`. The condition `(null '())` evaluates to true `t`, and that is a`symbol`, so the length is `none`, and the head is a `special-operator`.
 
 ## P09
-Replace this line with the rule behind this case's four fields.
+`(and 1 nil 3)` heads with the macro `and`. It evaluates forms left to right starting from `1` and short-circuits upon hitting the `nil`, which returns `nil`, and that is a `null` with length `0` and the head is a `special-operator`.
 
 ## P10
-Replace this line with the rule behind this case's four fields.
+`(progn ...)` heads with the special operator `progn`. It sequentially executes its forms and evaluates `(ps3-scale 3)` using the lexically bound `*ps3-rate*` of 10 to return the value `30`, and that is an `integer`, so the length is `none`, and the head is a `special-operator`.
 
 ## P11
-Replace this line with the rule behind this case's four fields.
+`(defun ps3-twice (n) (* n 2))` heads with the macro `defun`. It defines a global function and returns the symbol name `ps3-twice`, and that is a `symbol`, so the length is `none`, and the head is a `macro`.
 
 ## P12
-Replace this line with the rule behind this case's four fields.
+`(labels ... (down 3))` heads with the special operator `labels`. The local function `down` that is recurssive counts down from 3 to 1 to construct the list `(3,2,1)`, and that is a `cons` with length `3` and the head is a `special-operator`.
 
 ## P13
 `(mapcar #'length '((1 2) () (3)))` heads with the function `mapcar`, it applies the
