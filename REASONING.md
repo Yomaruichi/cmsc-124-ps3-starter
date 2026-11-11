@@ -17,8 +17,10 @@ then `+` adds `1` into it which returns a `7`. That is an `integer`, so the leng
 is `none` and the head is a `function`.
 
 ## P02
-`'(+ 1 2)` heads with the function `, the quote makes the list unevaluated so it
-returns as `(+,1,2)`, that is a `cons` with length `3` and the head is a `function`.
+I predicted that `'(+ 1 2)` heads with the function `, the quote makes the list
+unevaluated so it returns as `(+,1,2)`, that is a `cons` with length `3` and
+the head is a `function`. But CLISP printed that the head quote is a special-operator
+and not a function, but everything else I got right.
 
 ## P03
 `nil` is an atom which returns a `null`. It is an empty sequence so its
